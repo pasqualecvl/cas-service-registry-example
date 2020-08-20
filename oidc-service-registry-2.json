@@ -1,0 +1,11 @@
+{
+  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "clientId": "client2",
+  "clientSecret": "secret2",
+  "serviceId" : "http://localhost:8043/app2",
+  "implicit": false,
+  "signIdToken": false,
+  "name": "OIDC2",
+  "id": 1001,
+  "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code", "password", "client_credentials", "refresh_token" ] ]
+}
