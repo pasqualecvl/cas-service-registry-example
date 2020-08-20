@@ -1,0 +1,10 @@
+{
+  "@class" : "org.apereo.cas.services.OidcResteredService",
+  "clientId": "client",
+  "clientSecret": "secret",
+  "serviceId" : "http://localhost:8043/appone",
+  "implicit": false,
+  "name": "OIC",
+  "id": 1000, 
+  "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code", "password", "client_credentials", "refresh_token" ] ]
+}
