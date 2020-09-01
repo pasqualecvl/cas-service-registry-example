@@ -3,7 +3,7 @@
   "clientId": "client2",
   "clientSecret": "secret2",
   "serviceId" : "http://localhost:8043/app2",
-  "implicit": false,
+  "implicit": true,
   "signIdToken": false,
   "name": "OIDC2",
   "id": 1001,
