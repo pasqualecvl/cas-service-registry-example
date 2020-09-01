@@ -9,5 +9,6 @@
   "id": 1001,
   "generateRefreshToken": true,
   "jwtAccessToken": true,
-  "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code", "password", "client_credentials", "refresh_token" ] ]
+  "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code", "password", "client_credentials", "refresh_token" ] ],
+  "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ]
 }
