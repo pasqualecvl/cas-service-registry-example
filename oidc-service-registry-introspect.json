@@ -15,20 +15,11 @@
   "scopes" : [ "java.util.HashSet",
     [ "profile", "email", "role" ]
   ],
-  "attributeReleasePolicy": {
-    "@class": "org.apereo.cas.services.ChainingAttributeReleasePolicy",
-    "policies": [
-      "java.util.ArrayList",
-      [
-        {
-          "@class": "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
-          "allowedAttributes": {
-            "@class": "java.util.TreeMap",
-            "role": "groovy { return attributes['role'].get(0) }"
-          },
-          "order": 1
-        }
-      ]
-    ]
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
+    "allowedAttributes" : {
+      "@class" : "java.util.TreeMap",
+      "role" : "groovy { return attributes['uid'].get(0) }"
+    }
   }
 }
