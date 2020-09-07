@@ -13,7 +13,7 @@
   "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code" ] ],
   "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
   "scopes" : [ "java.util.HashSet",
-    [ "profile", "email" ]
+    [ "profile", "email", "role" ]
   ],
   "attributeReleasePolicy": {
     "@class": "org.apereo.cas.services.ChainingAttributeReleasePolicy",
