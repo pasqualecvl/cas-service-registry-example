@@ -14,5 +14,21 @@
   "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
   "scopes" : [ "java.util.HashSet",
     [ "profile", "email" ]
-  ]
+  ],
+  "attributeReleasePolicy": {
+    "@class": "org.apereo.cas.services.ChainingAttributeReleasePolicy",
+    "policies": [
+      "java.util.ArrayList",
+      [
+        {
+          "@class": "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
+          "allowedAttributes": {
+            "@class": "java.util.TreeMap",
+            "role": "groovy { return attributes['role'].get(0) }"
+          },
+          "order": 1
+        }
+      ]
+    ]
+  }
 }
