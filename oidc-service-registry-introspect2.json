@@ -1,0 +1,18 @@
+{
+  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "clientId": "client4",
+  "clientSecret": "secret4",
+  "serviceId" : "http://localhost:8080/server/api/authn/oidc",
+  "implicit": true,
+  "signIdToken": true,
+  "idTokenSigningAlg": "RS256",
+  "name": "ClientName2",
+  "id": 4,
+  "generateRefreshToken": false,
+  "jwtAccessToken": true,
+  "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code" ] ],
+  "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
+  "scopes" : [ "java.util.HashSet",
+    [ "profile", "email", "pgc-role" ]
+  ]
+}
