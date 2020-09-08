@@ -2,7 +2,7 @@
   "@class" : "org.apereo.cas.services.OidcRegisteredService",
   "clientId": "client3",
   "clientSecret": "secret3",
-  "serviceId" : "http://localhost:8080/server/api/authn/login",
+  "serviceId" : "http://localhost:8080/server/api/authn/oidc?redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F%23%2Findex.html",
   "implicit": true,
   "signIdToken": true,
   "idTokenSigningAlg": "RS256",
