@@ -1,5 +1,5 @@
 {
-  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "@class" : "org.apereo.cas.support.oauth.services.OAuthRegisteredService",
   "clientId": "client4",
   "clientSecret": "secret4",
   "serviceId" : "http://localhost:8080/server/api/authn/oidc1",
