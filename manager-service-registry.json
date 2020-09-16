@@ -3,6 +3,10 @@
   "serviceId" : "http://localhost:8082/manager/authorize",
   "name" : "AuthorizationManager",
   "description" : "Manager grant user -> client",
-  "id":100
+  "id":100,
+  "usernameAttributeProvider" : {
+    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceUsernameProvider",
+    "canonicalizationMode" : "NONE"
+  }
 }
 
