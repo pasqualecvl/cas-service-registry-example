@@ -4,9 +4,8 @@
   "name" : "AuthorizationManager",
   "description" : "Manager grant user -> client",
   "id":100,
-  "usernameAttributeProvider" : {
-    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceUsernameProvider",
-    "canonicalizationMode" : "NONE"
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
   }
-}
+ }
 
