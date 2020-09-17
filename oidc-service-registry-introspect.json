@@ -2,7 +2,7 @@
   "@class" : "org.apereo.cas.services.OidcRegisteredService",
   "clientId": "client3",
   "clientSecret": "secret3",
-  "serviceId" : "http://openidphp.dev01.4science.cloud/auth-endpoint",
+  "serviceId" : "https://perucas.dev.4science.cloud/developers",
   "implicit": true,
   "signIdToken": true,
   "idTokenSigningAlg": "RS256",
