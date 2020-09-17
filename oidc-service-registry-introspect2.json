@@ -2,7 +2,7 @@
   "@class" : "org.apereo.cas.services.OidcRegisteredService",
   "clientId": "client4",
   "clientSecret": "secret4",
-  "serviceId" : "http://openidphp.dev01.4science.cloud/auth-endpoint",
+  "serviceId" : "http://localhost:8080/server/api/authn/oidc1",
   "implicit": true,
   "signIdToken": true,
   "idTokenSigningAlg": "RS256",
