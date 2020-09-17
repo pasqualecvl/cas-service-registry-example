@@ -2,24 +2,17 @@
   "@class" : "org.apereo.cas.services.OidcRegisteredService",
   "clientId": "client3",
   "clientSecret": "secret3",
-  "serviceId" : "http://localhost:8080/server/api/authn/oidc",
+  "serviceId" : "http://openidphp.dev01.4science.cloud/auth-endpoint",
   "implicit": true,
   "signIdToken": true,
   "idTokenSigningAlg": "RS256",
   "name": "ClientName",
   "id": 3,
-  "generateRefreshToken": false,
+  "generateRefreshToken": true,
   "jwtAccessToken": true,
   "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code" ] ],
   "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
   "scopes" : [ "java.util.HashSet",
-    [ "profile", "email", "role" ]
-  ],
-  "attributeReleasePolicy" : {
-    "@class" : "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
-    "allowedAttributes" : {
-      "@class" : "java.util.TreeMap",
-      "role" : "groovy { return attributes['uid'].get(0) }"
-    }
-  }
+    [ "profile", "email", "role", "pgc-role" ]
+  ]
 }
