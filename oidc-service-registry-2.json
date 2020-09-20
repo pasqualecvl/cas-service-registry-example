@@ -11,7 +11,7 @@
   "jwtAccessToken": true,
   "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code", "password", "client_credentials", "refresh_token" ] ],
   "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
-  "scopes" : [ "java.util.HashSet", [ "profile", "email", "role", "phone", "pgc-role" ] ],
+  "scopes" : [ "java.util.HashSet", [ "profile", "email", "phone", "address" ] ],
   "attributeReleasePolicy": {
     "@class": "org.apereo.cas.services.ChainingAttributeReleasePolicy",
     "policies": [
