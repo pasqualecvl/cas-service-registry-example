@@ -27,11 +27,11 @@
         },
         {
           "@class": "org.apereo.cas.oidc.claims.OidcAddressScopeAttributeReleasePolicy",
-          "order":0
+          "order":2
         },
         {
           "@class": "org.apereo.cas.oidc.claims.OidcPhoneScopeAttributeReleasePolicy",
-          "order":0
+          "order":3
         }
       ]
     ]
