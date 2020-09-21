@@ -8,7 +8,7 @@
   "idTokenSigningAlg": "RS256",
   "name": "ClientName2",
   "id": 4,
-  "generateRefreshToken": false,
+  "generateRefreshToken": true,
   "jwtAccessToken": true,
   "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code" ] ],
   "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
