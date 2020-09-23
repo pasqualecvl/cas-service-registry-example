@@ -2,7 +2,7 @@
   "@class" : "org.apereo.cas.services.OidcRegisteredService",
   "clientId": "client5",
   "clientSecret": "secret5",
-  "serviceId" : "https://perucas.dev.4science.cloud/developers/auth-endpoint",
+  "serviceId" : "https://perucas.test.4science.cloud/developers/auth-endpoint",
   "implicit": true,
   "signIdToken": true,
   "idTokenSigningAlg": "RS256",
