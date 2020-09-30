@@ -21,23 +21,24 @@
       "java.util.ArrayList",
       [
         {
-          "@class": "org.apereo.cas.oidc.claims.OidcEmailScopeAttributeReleasePolicy",
+          "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ],
           "order":0
         },
         {
-          "@class": "org.apereo.cas.oidc.claims.OidcProfileScopeAttributeReleasePolicy",
+          "@class": "org.apereo.cas.oidc.claims.OidcEmailScopeAttributeReleasePolicy",
           "order":1
         },
         {
-          "@class": "org.apereo.cas.oidc.claims.OidcAddressScopeAttributeReleasePolicy",
+          "@class": "org.apereo.cas.oidc.claims.OidcProfileScopeAttributeReleasePolicy",
           "order":2
         },
         {
-          "@class": "org.apereo.cas.oidc.claims.OidcPhoneScopeAttributeReleasePolicy",
+          "@class": "org.apereo.cas.oidc.claims.OidcAddressScopeAttributeReleasePolicy",
           "order":3
-        },{
-          "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
-          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ],
+        },
+        {
+          "@class": "org.apereo.cas.oidc.claims.OidcPhoneScopeAttributeReleasePolicy",
           "order":4
         }
       ]
