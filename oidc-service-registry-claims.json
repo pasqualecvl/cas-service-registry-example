@@ -32,6 +32,9 @@
         {
           "@class": "org.apereo.cas.oidc.claims.OidcPhoneScopeAttributeReleasePolicy",
           "order":3
+        },{
+          "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ]
         }
       ]
     ]
