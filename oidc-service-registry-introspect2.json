@@ -14,5 +14,32 @@
   "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
   "scopes" : [ "java.util.HashSet",
     [ "profile", "email", "pgc-role", "openid" ]
-  ]
+  ],
+   "attributeReleasePolicy": {
+    "@class": "org.apereo.cas.services.ChainingAttributeReleasePolicy",
+    "policies": [
+      "java.util.ArrayList",
+      [
+        {
+          "@class": "org.apereo.cas.oidc.claims.OidcEmailScopeAttributeReleasePolicy",
+          "order":0
+        },
+        {
+          "@class": "org.apereo.cas.oidc.claims.OidcProfileScopeAttributeReleasePolicy",
+          "order":1
+        },
+        {
+          "@class": "org.apereo.cas.oidc.claims.OidcAddressScopeAttributeReleasePolicy",
+          "order":2
+        },
+        {
+          "@class": "org.apereo.cas.oidc.claims.OidcPhoneScopeAttributeReleasePolicy",
+          "order":3
+        },{
+          "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ]
+        }
+      ]
+    ]
+  }
 }
