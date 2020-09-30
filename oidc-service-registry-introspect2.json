@@ -22,7 +22,7 @@
       [
         {
           "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
-          "allowedAttributes" : [ "java.util.ArrayList", [ "pgcrole" ] ],
+          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ],
           "order":0
         },
         {
