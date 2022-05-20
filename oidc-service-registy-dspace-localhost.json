@@ -1,12 +1,13 @@
 {
   "@class" : "org.apereo.cas.services.OidcRegisteredService",
-  "clientId": "flywalletclient",
-  "clientSecret": "flywalletsecret",
-  "serviceId" : "http://idp.test.flywallet-api.com/oidc",
+  "clientId": "client2",
+  "clientSecret": "secret2",
+  "serviceId" : "http://localhost:8080/server/api/authn/oidc",
   "implicit": true,
-  "signIdToken": false,
-  "name": "flywallet",
-  "id": 1001,
+  "signIdToken": true,
+  "idTokenSigningAlg": "RS256",
+  "name": "DSpace",
+  "id": 11,
   "generateRefreshToken": true,
   "jwtAccessToken": true,
   "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code", "password", "client_credentials", "refresh_token" ] ],
@@ -34,8 +35,10 @@
           "order":3
         },{
           "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
-          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ]
+          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ],
+          order:4
         }
       ]
     ]
-  }}
+  }
+}
